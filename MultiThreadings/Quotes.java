@@ -1,0 +1,27 @@
+package MultiThreadings;
+
+public class Quotes {
+    private final String site;
+    private final int price;
+
+    public Quotes(String site, int price) {
+        this.site = site;
+        this.price = price;
+    }
+
+    @Override
+    public String toString() {
+        return "Quotes{" +
+                "site='" + site + '\'' +
+                ", price=" + price +
+                '}';
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public String getSite() {
+        return site;
+    }
+}
